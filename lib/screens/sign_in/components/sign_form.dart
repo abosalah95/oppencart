@@ -75,18 +75,18 @@ class _SignFormState extends State<SignForm> {
           DefaultButton(
             text: "Continue",
             press: () async {
-              if (_formKey.currentState.validate()) {
-                _formKey.currentState.save();
-                // if all are valid then go to success screen
-                KeyboardUtil.hideKeyboard(context);
-                dynamic data= await Repository.instance.login( loginRequest:
-                LoginRequest(
-                    username:email ,
-                    key: "tAMegxl1CsL7Or8PDljBwDbPqKb0qpTdGhoVKf6MbGJt4Ic0DInFg8pwYNO47rFu6NyTKksjlKatdMnOOaFNcLCJiERHzaLMK0sfNuG4WIEXtmLCj55fBHZZ5pEVP1UvUmGh5uXPjTqpJSUWabY06OjjOWUsB1A5RlreWoCw0Arq6cVA6yYWSxzuO8eS404q2CAEOOZBNfCILnlG5moi3wXYKn7MDvT8U8V8eCrH4LoFjpAn05N1YeRDtpLDuj32"
-                ));
-//                Navigator.pushNamed(context, LoginSuccessScreen.routeName);
-              print(data);
-              }
+              // if (_formKey.currentState.validate()) {
+              //   _formKey.currentState.save();
+              //   // if all are valid then go to success screen
+              //   KeyboardUtil.hideKeyboard(context);
+              //   dynamic data= await Repository.instance.login( loginRequest:
+              //   LoginRequest(
+              //       username:email ,
+              //       key: "tAMegxl1CsL7Or8PDljBwDbPqKb0qpTdGhoVKf6MbGJt4Ic0DInFg8pwYNO47rFu6NyTKksjlKatdMnOOaFNcLCJiERHzaLMK0sfNuG4WIEXtmLCj55fBHZZ5pEVP1UvUmGh5uXPjTqpJSUWabY06OjjOWUsB1A5RlreWoCw0Arq6cVA6yYWSxzuO8eS404q2CAEOOZBNfCILnlG5moi3wXYKn7MDvT8U8V8eCrH4LoFjpAn05N1YeRDtpLDuj32"
+              //   ));
+               Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+//               print(data);
+//               }
             },
           ),
         ],
